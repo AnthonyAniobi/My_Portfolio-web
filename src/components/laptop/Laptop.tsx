@@ -6,7 +6,7 @@ const Laptop = () => {
 
     return (
         <div className='laptop'>
-            <img src={laptopImage} alt="laptop image" />
+            <img src={laptopImage} alt="laptop" />
             <div className="laptopScreen"></div>
         </div>
     )

@@ -5,7 +5,7 @@ import serverImage from '../../assets/images/server.png';
 const Server = () => {
     return (
         <div className='server'>
-            <img src={serverImage} alt="server image" />
+            <img src={serverImage} alt="server" />
             <div></div>
         </div>
     )
