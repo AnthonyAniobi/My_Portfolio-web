@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './server.scss';
+import serverImage from '../../assets/images/server.png';
 
 const Server = () => {
     return (
-        <div>Server</div>
+        <div className='server'>
+            <img src={serverImage} alt="server image" />
+            <div></div>
+        </div>
     )
 }
 

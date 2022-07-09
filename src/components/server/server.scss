@@ -1,0 +1,23 @@
+.server {
+    height: 50vh;
+    width: 80vh;
+    position: relative;
+    background-color: blue;
+
+    div {
+        width: 73%;
+        height: 67%;
+        background-color: red;
+        position: absolute;
+        top: 5.5%;
+        left: 13.5%;
+    }
+
+    img {
+        position: absolute;
+        height: 50vh;
+        width: 80vh;
+        top: 0px;
+        left: 0px;
+    }
+}

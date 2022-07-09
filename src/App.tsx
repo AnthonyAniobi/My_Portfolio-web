@@ -13,8 +13,8 @@ function App() {
         <Route path='/'>
           <Route index element={<Home />} />
           <Route path='mobile' element={<Mobile />} />
-          <Route path='mobile' element={<Web />} />
-          <Route path='mobile' element={<Backend />} />
+          <Route path='web' element={<Web />} />
+          <Route path='backend' element={<Backend />} />
         </Route>
       </Routes>
     </BrowserRouter>

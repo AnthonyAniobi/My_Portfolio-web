@@ -1,8 +1,12 @@
 import React from 'react'
+import Server from '../../components/server/Server'
 
 const Backend = () => {
     return (
-        <div>Backend</div>
+        <div>Backend
+            <Server />
+
+        </div>
     )
 }
 

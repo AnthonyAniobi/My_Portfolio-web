@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './web.scss';
+import Backend from '../backend/Backend';
 
 const Web = () => {
     return (
-        <div>Web</div>
+        <div>Web
+            <Backend />
+        </div>
     )
 }
 
