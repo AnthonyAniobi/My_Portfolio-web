@@ -1,11 +1,11 @@
 import React from 'react';
 import './web.scss';
-import Backend from '../backend/Backend';
+import Laptop from '../../components/laptop/Laptop';
 
 const Web = () => {
     return (
         <div>Web
-            <Backend />
+            <Laptop />
         </div>
     )
 }

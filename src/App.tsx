@@ -4,6 +4,7 @@ import Home from './pages/home/Home';
 import Backend from './pages/backend/Backend';
 import Web from './pages/web/Web';
 import Mobile from './pages/mobile/Mobile';
+import NotFound from './pages/notfound/NotFound';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='mobile' element={<Mobile />} />
           <Route path='web' element={<Web />} />
           <Route path='backend' element={<Backend />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
