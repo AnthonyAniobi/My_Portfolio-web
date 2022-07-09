@@ -1,0 +1,50 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-color: goldenrod;
+    position: relative;
+
+    .nameCard {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        .title {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .subtitle {
+            font-family: 'Edu NSW ACT Foundation', cursive;
+        }
+    }
+
+    .projectStacks {
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .title {
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-size: 20px;
+            color: rgb(27, 22, 22);
+        }
+
+    }
+
+
+
+    // font-family: 'Edu NSW ACT Foundation', cursive;
+    // font-family: 'Roboto', sans-serif;
+}

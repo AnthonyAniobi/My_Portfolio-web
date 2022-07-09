@@ -10,12 +10,7 @@ import NotFound from './pages/notfound/NotFound';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <Link to='/'>Home</Link>
-        <Link to='/mobile'>Mobile</Link>
-        <Link to='/web'>Web</Link>
-        <Link to='/backend'>Desktop</Link>
-      </div>
+
 
       <Routes>
         <Route path='/'>

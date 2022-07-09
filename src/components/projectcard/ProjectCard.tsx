@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './projectcard.scss';
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, url }: { title: string, url: string }) => {
     return (
-        <div className='projectcard'>ProjectCard</div>
+        <div className='projectcard'>
+            <div className="cardTitle">
+                {title}
+            </div>
+        </div>
     )
 }
 
