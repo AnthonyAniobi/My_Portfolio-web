@@ -1,0 +1,23 @@
+.android {
+    height: 60vh;
+    width: 33vh;
+    position: relative;
+    background-color: blue;
+
+    div {
+        width: 82%;
+        height: 80%;
+        background-color: red;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    img {
+        position: absolute;
+        height: 60vh;
+        width: 33vh;
+        top: 0px;
+        left: 0px;
+    }
+}

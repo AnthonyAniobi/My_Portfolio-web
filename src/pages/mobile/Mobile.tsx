@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Android from '../../components/android/Android';
+import './mobile.scss';
 
 const Mobile = () => {
     return (
-        <div>Mobile</div>
+        <div>Mobile
+            <Android />
+        </div>
+
     )
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './android.scss';
+import androidImage from '../../assets/images/android.png';
 
 const Android = () => {
     return (
-        <div>Android</div>
+        <div className='android'>
+            <img src={androidImage} alt="andorid image" />
+            <div></div>
+        </div>
     )
 }
 
