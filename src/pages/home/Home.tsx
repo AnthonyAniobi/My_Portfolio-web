@@ -21,11 +21,12 @@ const Home = () => {
             <div className='home_title-container'>
                 <h1 className="home_title">ANTHONY ANIOBI</h1>
                 <h4 className="home_subtitle">Software Engineer</h4>
+                <div className='home_buttons-container'>
+                    <Link to='/about' className='home_about-button'>About Me</Link>
+                    <Link to='/projects' className='home_project-button'>My Projects</Link>
+                </div>
             </div>
-            <div className='home_buttons-container'>
-                <Link to='/about'>About Me</Link>
-                <Link to='/projects'>My Projects</Link>
-            </div>
+
         </div>
     )
 }

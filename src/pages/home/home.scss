@@ -52,6 +52,20 @@
             font-size: 30px;
             font-weight: 500;
         }
+
+        .home_buttons-container {
+            margin-top: 40px;
+
+            .home_about-button,
+            .home_project-button {
+                padding: 10px 20px;
+                background-color: var(--blue);
+                margin: 0px 10px;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
     }
 
     .home_gif-container {
