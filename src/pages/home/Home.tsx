@@ -1,23 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ProjectCard from '../../components/projectcard/ProjectCard';
+// import ProjectCard from '../../components/projectcard/ProjectCard';
 import './home.scss';
+import programmer from '../../assets/gif/programmer.gif';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className="home">
-            <div className='nameCard'>
-                <h1 className="title">ANTHONY ANIOBI</h1>
-                <h4 className="subtitle">Software Engineer</h4>
+            <div className='home_bottom-bar'></div>
+            <div className="home_top-navbar">
+                <ul>
+                    <li>Flutter</li>
+                    <li>React</li>
+                    <li>Python</li>
+                </ul>
             </div>
-            <div className='projectStacks'>
-                <h1 className="title">My Projects</h1>
-                <div className='projectStacksCard'>
-                    <ProjectCard title='Mobile' url='/mobile' />
-                    <ProjectCard title='Websites' url='/web' />
-                    <ProjectCard title='Backend' url='/backend' />
-
-                </div>
+            <div className='home_gif-container'>
+                <img src={programmer} alt="programmer" />
+            </div>
+            <div className='home_title-container'>
+                <h1 className="home_title">ANTHONY ANIOBI</h1>
+                <h4 className="home_subtitle">Software Engineer</h4>
+            </div>
+            <div className='home_buttons-container'>
+                <Link to='/about'>About Me</Link>
+                <Link to='/projects'>My Projects</Link>
             </div>
         </div>
     )

@@ -1,23 +1,14 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Backend from './pages/backend/Backend';
-import Web from './pages/web/Web';
-import Mobile from './pages/mobile/Mobile';
-import NotFound from './pages/notfound/NotFound';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home, NotFound, Projects, About } from './pages';
 
 function App() {
   return (
     <BrowserRouter>
-
-
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
-          <Route path='mobile' element={<Mobile />} />
-          <Route path='web' element={<Web />} />
-          <Route path='backend' element={<Backend />} />
+          <Route path='projects' element={<Projects />} />
+          <Route path='about' element={<About />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
