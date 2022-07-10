@@ -58,12 +58,40 @@
 
             .home_about-button,
             .home_project-button {
-                padding: 10px 20px;
+                padding: 8px 30px;
                 background-color: var(--blue);
                 margin: 0px 10px;
                 border-radius: 5px;
+                border: 3px solid var(--blue);
                 font-weight: bold;
                 font-size: 20px;
+                text-decoration: none;
+                font-family: var(--roboto);
+                cursor: pointer;
+                -webkit-box-shadow: var(--boxShadow);
+                box-shadow: var(--boxShadow);
+
+            }
+
+            .home_about-button {
+                background-color: var(--white);
+                color: var(--blue);
+
+                &:hover {
+                    background-color: var(--whiteDark);
+                    border-color: var(--blueLight);
+                    color: var(--blueLight);
+                }
+            }
+
+            .home_project-button {
+                color: var(--white);
+
+                &:hover {
+                    background-color: var(--blueLight);
+                    border-color: var(--blueLight);
+                    color: var(--whiteDark);
+                }
             }
         }
     }
