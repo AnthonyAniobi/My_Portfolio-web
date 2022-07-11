@@ -11,16 +11,21 @@
 
     .backend-projects_container {
         flex: 2;
-        height: 100%;
-        padding: 10px 0px 0px 30px;
+        height: 100vh;
+        // padding: 10px 0px 0px 30px;
         font-family: var(--roboto);
         overflow: scroll;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
 
         .backend-projects-list-container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 30px;
+            // overflow: scroll;
         }
     }
 }

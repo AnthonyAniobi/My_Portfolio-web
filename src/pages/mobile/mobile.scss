@@ -13,9 +13,13 @@
     .mobile-projects_container {
         flex: 2;
         height: 100vh;
-        padding: 10px 0px 0px 30px;
+        // padding: 10px 0px 0px 30px;
         font-family: var(--roboto);
         overflow: scroll;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
 
         .mobile-projects-list-container {
             display: flex;
