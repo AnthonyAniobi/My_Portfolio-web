@@ -3,26 +3,29 @@ import './projects.scss';
 import { Backend, Web, Mobile } from '../index';
 import { FaReact } from 'react-icons/fa';
 import { SiFlutter, SiPython } from 'react-icons/si';
+import { useParams } from 'react-router';
+
 
 const Projects = () => {
 
-    const [pageIndex, setPageIndex] = useState(0);
+    const params = useParams();
+    let pageId: number = parseInt(params.id!, 0);
+    const [pageIndex, setPageIndex] = useState(pageId);
+
 
     const currentPage = () => {
-        let selectedPage: JSX.Element;
 
         switch (pageIndex) {
             case 1:
-                selectedPage = <Mobile />
-                break;
+                return <Mobile />
+
             case 2:
-                selectedPage = <Backend />
-                break;
+                return <Backend />
+
             default:
-                selectedPage = <Web />
+                return <Web />
                 break;
         }
-        return selectedPage
     }
 
     const changePage = (index: number) => {
@@ -33,9 +36,10 @@ const Projects = () => {
     return (
         <div className='projects'>
             <div className='projects-sidebar'>
-                <FaReact className={`projects-sidebar-icon ${pageIndex == 0 && 'selected'}`} onClick={() => { changePage(0) }} />
-                <SiFlutter className={`projects-sidebar-icon ${pageIndex == 1 && 'selected'}`} onClick={() => { changePage(1) }} />
-                <SiPython className={`projects-sidebar-icon ${pageIndex == 2 && 'selected'}`} onClick={() => { changePage(2) }} />
+                <div />
+                <FaReact className={`projects-sidebar-icon ${pageIndex === 0 && 'selected'}`} onClick={() => { changePage(0) }} />
+                <SiFlutter className={`projects-sidebar-icon ${pageIndex === 1 && 'selected'}`} onClick={() => { changePage(1) }} />
+                <SiPython className={`projects-sidebar-icon ${pageIndex === 2 && 'selected'}`} onClick={() => { changePage(2) }} />
 
             </div>
 
