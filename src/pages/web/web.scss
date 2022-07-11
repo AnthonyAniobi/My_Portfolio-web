@@ -1,0 +1,30 @@
+.web {
+    display: flex;
+    height: 100%;
+
+    .web-preview_container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-projects_container {
+        flex: 2;
+        height: 100vh;
+        // padding: 10px 0px 0px 30px;
+        font-family: var(--roboto);
+        overflow: scroll;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .web-projects-list-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
