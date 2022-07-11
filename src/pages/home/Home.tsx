@@ -8,13 +8,6 @@ const Home = () => {
     return (
         <div className="home">
             <div className='home_bottom-bar'></div>
-            <div className="home_top-navbar">
-                <ul>
-                    <li><Link className='home_top-navbar-link' to='/projects'>React</Link></li>
-                    <li><Link className='home_top-navbar-link' to='/projects'>Flutter</Link></li>
-                    <li><Link className='home_top-navbar-link' to='/projects'>Python</Link></li>
-                </ul>
-            </div>
             <div className='home_gif-container'>
                 <img src={programmer} alt="programmer" />
             </div>
@@ -24,6 +17,7 @@ const Home = () => {
                 <div className='home_buttons-container'>
                     <Link to='/about' className='home_about-button'>About Me</Link>
                     <Link to='/projects' className='home_project-button'>My Projects</Link>
+
                 </div>
             </div>
 
