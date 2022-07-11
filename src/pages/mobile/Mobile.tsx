@@ -1,5 +1,6 @@
 import React from 'react';
 import Android from '../../components/android/Android';
+import ProjectCard from '../../components/projectcard/ProjectCard';
 import './mobile.scss';
 
 const Mobile = () => {
@@ -13,24 +14,12 @@ const Mobile = () => {
                     Mobile projects
                 </h1>
                 <div className="mobile-projects-list-container">
-                    <div className="mobile-project-item">
-                        something
-                    </div>
-                    <div className="mobile-project-item">
-                        something
-                    </div>
-                    <div className="mobile-project-item">
-                        something
-                    </div>
-                    <div className="mobile-project-item">
-                        something
-                    </div>
-                    <div className="mobile-project-item">
-                        something
-                    </div>
-                    <div className="mobile-project-item">
-                        something
-                    </div>
+                    <ProjectCard title="1" url="" />
+                    <ProjectCard title="2" url="" />
+                    <ProjectCard title="3" url="" />
+                    <ProjectCard title="4" url="" />
+                    <ProjectCard title="5" url="" />
+                    <ProjectCard title="6" url="" />
                 </div>
             </div>
         </div>
