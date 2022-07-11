@@ -24,7 +24,7 @@ const Projects = () => {
 
             default:
                 return <Web />
-                break;
+
         }
     }
 
