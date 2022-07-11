@@ -10,9 +10,9 @@ const Home = () => {
             <div className='home_bottom-bar'></div>
             <div className="home_top-navbar">
                 <ul>
-                    <li>Flutter</li>
-                    <li>React</li>
-                    <li>Python</li>
+                    <li><Link className='home_top-navbar-link' to='/projects'>React</Link></li>
+                    <li><Link className='home_top-navbar-link' to='/projects'>Flutter</Link></li>
+                    <li><Link className='home_top-navbar-link' to='/projects'>Python</Link></li>
                 </ul>
             </div>
             <div className='home_gif-container'>
