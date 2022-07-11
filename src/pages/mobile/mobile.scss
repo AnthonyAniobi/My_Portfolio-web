@@ -4,6 +4,7 @@
 
     .mobile-preview_container {
         flex: 1;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -11,6 +12,24 @@
 
     .mobile-projects_container {
         flex: 2;
-        background-color: blue;
+        height: 100vh;
+        padding: 10px 0px 0px 30px;
+        font-family: var(--roboto);
+
+        .mobile-projects-list-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .mobile-project-item {
+                max-width: 600px;
+                min-width: 300px;
+                height: 250px;
+                -webkit-box-shadow: var(--boxShadow);
+                box-shadow: var(--boxShadow);
+
+            }
+        }
     }
 }

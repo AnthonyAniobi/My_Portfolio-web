@@ -12,6 +12,26 @@ const Mobile = () => {
                 <h1 className="mobile-projects-title">
                     Mobile projects
                 </h1>
+                <div className="mobile-projects-list-container">
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                    <div className="mobile-project-item">
+                        something
+                    </div>
+                </div>
             </div>
         </div>
 
