@@ -1,0 +1,16 @@
+.backend {
+    display: flex;
+    height: 100%;
+
+    .backend-preview_container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backend-projects_container {
+        flex: 2;
+        background-color: blue;
+    }
+}

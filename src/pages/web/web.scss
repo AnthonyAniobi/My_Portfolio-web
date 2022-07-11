@@ -1,0 +1,16 @@
+.web {
+    display: flex;
+    height: 100%;
+
+    .web-preview_container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-projects_container {
+        flex: 2;
+        background-color: blue;
+    }
+}
