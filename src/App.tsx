@@ -1,7 +1,22 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, NotFound, Projects, About } from './pages';
+import { Home, NotFound, Projects, About, Mobile, Web, Backend } from './pages';
 
 function App() {
+
+  const subdomain = window.location.host.split(".")[0];
+
+  switch (subdomain) {
+    case 'web':
+      return <Web />;
+
+    case 'mobile':
+      return <Mobile />;
+
+    case 'backend':
+      return <Backend />;
+
+  }
+
   return (
     <BrowserRouter>
       <Routes>

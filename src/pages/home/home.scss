@@ -17,16 +17,21 @@
             display: flex;
 
             li {
-                padding: 10px 20px;
-
-                background-color: green;
+                margin-top: 20px;
                 margin-right: 10px;
-                margin-top: 10px;
-                font-size: 16px;
-                font-weight: bold;
 
-                &:hover {
-                    background-color: rgb(248, 248, 248);
+                .home_top-navbar-link {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    font-family: var(--roboto);
+                    font-weight: bold;
+                    color: var(--blue);
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--blue);
+                        color: var(--white);
+                    }
                 }
             }
         }
@@ -51,6 +56,48 @@
             font-family: 'Edu NSW ACT Foundation', cursive;
             font-size: 30px;
             font-weight: 500;
+        }
+
+        .home_buttons-container {
+            margin-top: 40px;
+
+            .home_about-button,
+            .home_project-button {
+                padding: 8px 30px;
+                background-color: var(--blue);
+                margin: 0px 10px;
+                border-radius: 5px;
+                border: 3px solid var(--blue);
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: var(--roboto);
+                cursor: pointer;
+                -webkit-box-shadow: var(--boxShadow);
+                box-shadow: var(--boxShadow);
+
+            }
+
+            .home_about-button {
+                background-color: var(--white);
+                color: var(--blue);
+
+                &:hover {
+                    background-color: var(--whiteDark);
+                    border-color: var(--blueLight);
+                    color: var(--blueLight);
+                }
+            }
+
+            .home_project-button {
+                color: var(--white);
+
+                &:hover {
+                    background-color: var(--blueLight);
+                    border-color: var(--blueLight);
+                    color: var(--whiteDark);
+                }
+            }
         }
     }
 
