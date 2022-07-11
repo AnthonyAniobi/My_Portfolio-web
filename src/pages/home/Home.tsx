@@ -9,11 +9,10 @@ const Home = () => {
         <div className="home">
             <div className='home_bottom-bar'></div>
             <div className="home_top-navbar">
-                <ul>
-                    <li><Link className='home_top-navbar-link' to='/projects'>React</Link></li>
-                    <li><Link className='home_top-navbar-link' to='/projects'>Flutter</Link></li>
-                    <li><Link className='home_top-navbar-link' to='/projects'>Python</Link></li>
-                </ul>
+                <Link className='home_top-navbar-link' to='/projects'>React</Link>
+                <Link className='home_top-navbar-link' to='/projects'>Flutter</Link>
+                <Link className='home_top-navbar-link' to='/projects'>Python</Link>
+
             </div>
             <div className='home_gif-container'>
                 <img src={programmer} alt="programmer" />

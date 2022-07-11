@@ -10,31 +10,28 @@
         display: flex;
         width: 100%;
         justify-content: flex-end;
-        // cursor: pointer;
 
-        ul {
-            list-style-type: none;
-            display: flex;
+        .home_top-navbar-link {
+            margin: 20px 10px;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: var(--roboto);
+            font-weight: bold;
+            color: var(--blue);
+            cursor: pointer;
 
-            li {
-                margin-top: 20px;
-                margin-right: 10px;
 
-                .home_top-navbar-link {
-                    text-decoration: none;
-                    padding: 10px 20px;
-                    font-family: var(--roboto);
-                    font-weight: bold;
-                    color: var(--blue);
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: var(--blue);
-                        color: var(--white);
-                    }
-                }
+            &:hover {
+                background-color: var(--blue);
+                color: var(--white);
             }
         }
+
+        // a{
+        //     margin-top: 20px;
+        //     margin-right: 10px;
+        // }
+        // cursor: pointer;
     }
 
     .home_title-container {
