@@ -1,0 +1,37 @@
+.projects {
+    display: flex;
+
+    .projects-sidebar {
+        width: 60px;
+        height: 100vh;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 40px;
+
+        .projects-sidebar-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 0px;
+            padding: 10px 10px;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blueLight);
+                color: var(--whiteDark);
+            }
+        }
+
+        .selected {
+            color: var(--blue);
+            background-color: var(--white);
+        }
+    }
+
+    .projects-body {
+        flex: 1;
+        // background-color: black;
+    }
+}
