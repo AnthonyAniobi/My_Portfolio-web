@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './userinfo.scss';
 
 const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {

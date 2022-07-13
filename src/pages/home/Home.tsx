@@ -1,5 +1,4 @@
 import React from 'react';
-// import ProjectCard from '../../components/projectcard/ProjectCard';
 import './home.scss';
 import programmer from '../../assets/gif/programmer.gif';
 import { Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ const Home = () => {
                 <h4 className="home_subtitle">Software Engineer</h4>
                 <div className='home_buttons-container'>
                     <Link to='/about' className='home_about-button'>About Me</Link>
-                    <Link to='/web' className='home_project-button'>My Projects</Link>
+                    <Link to='/projects' className='home_project-button'>My Projects</Link>
 
                 </div>
             </div>

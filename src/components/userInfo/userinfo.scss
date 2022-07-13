@@ -34,13 +34,18 @@
             // border: 0px;
             font-family: var(--roboto);
             font-size: 20px;
+            font-weight: bold;
             border: 2px solid var(--blue);
             border-radius: 5px;
             margin: 20px 10px;
-            cursor: pointer;
+            -webkit-box-shadow: var(--boxShadow);
+            box-shadow: var(--boxShadow);
         }
 
-        .userinfo-button-about {}
+        .userinfo-button-about {
+            background-color: white;
+            color: var(--blue);
+        }
 
         .userinfo-button-resume {
             background-color: var(--blue);

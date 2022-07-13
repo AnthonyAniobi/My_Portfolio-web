@@ -15,6 +15,7 @@ function App() {
           <Route path='react' element={<Web />} />
           <Route path='mobile' element={<Mobile />} />
           <Route path='flutter' element={<Mobile />} />
+          <Route path='android' element={<Mobile />} />
           <Route path='backend' element={<Backend />} />
           <Route path='python' element={<Backend />} />
           {/* about page */}
