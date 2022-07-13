@@ -16,7 +16,7 @@ const Home = () => {
                 <h4 className="home_subtitle">Software Engineer</h4>
                 <div className='home_buttons-container'>
                     <Link to='/about' className='home_about-button'>About Me</Link>
-                    <Link to='/projects/0' className='home_project-button'>My Projects</Link>
+                    <Link to='/web' className='home_project-button'>My Projects</Link>
 
                 </div>
             </div>

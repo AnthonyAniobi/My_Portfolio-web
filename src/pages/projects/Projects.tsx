@@ -8,23 +8,24 @@ import { useParams } from 'react-router';
 
 const Projects = () => {
 
-    const params = useParams();
-    let pageId: number = parseInt(params.id!, 0);
-    const [pageIndex, setPageIndex] = useState(pageId);
+    const params = useParams().id;
+    const [pageIndex, setPageIndex] = useState(0);
 
 
     const currentPage = () => {
 
-        switch (pageIndex) {
-            case 1:
-                return <Mobile />
-
-            case 2:
+        switch (params) {
+            case 'backend':
+                setPageIndex(0);
                 return <Backend />
 
-            default:
-                return <Web />
+            case 'mobile':
+                setPageIndex(1);
+                return <Mobile />
 
+            default:
+                setPageIndex(2)
+                return <Web />
         }
     }
 
@@ -37,9 +38,9 @@ const Projects = () => {
         <div className='projects'>
             <div className='projects-sidebar'>
                 <div />
-                <FaReact className={`projects-sidebar-icon ${pageIndex === 0 && 'selected'}`} onClick={() => { changePage(0) }} />
+                <FaReact className={`projects-sidebar-icon ${pageIndex === 2 && 'selected'}`} onClick={() => { changePage(2) }} />
                 <SiFlutter className={`projects-sidebar-icon ${pageIndex === 1 && 'selected'}`} onClick={() => { changePage(1) }} />
-                <SiPython className={`projects-sidebar-icon ${pageIndex === 2 && 'selected'}`} onClick={() => { changePage(2) }} />
+                <SiPython className={`projects-sidebar-icon ${pageIndex === 0 && 'selected'}`} onClick={() => { changePage(0) }} />
 
             </div>
 
