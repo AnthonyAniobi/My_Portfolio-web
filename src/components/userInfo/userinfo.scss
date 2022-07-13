@@ -1,0 +1,50 @@
+.userinfo {
+    .userinfo-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: var(--roboto);
+    }
+
+    .userinfo-stack-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .userinfo-subtitle {
+            font-family: var(--cursive);
+        }
+
+        svg {
+            margin-left: 5px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .userinfo-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .userinfo-button-about,
+        .userinfo-button-resume {
+            padding: 5px 20px;
+            // border: 0px;
+            font-family: var(--roboto);
+            font-size: 20px;
+            border: 2px solid var(--blue);
+            border-radius: 5px;
+            margin: 20px 10px;
+            cursor: pointer;
+        }
+
+        .userinfo-button-about {}
+
+        .userinfo-button-resume {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+    }
+}
