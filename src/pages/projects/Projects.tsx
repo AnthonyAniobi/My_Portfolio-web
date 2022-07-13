@@ -10,21 +10,22 @@ const Projects = () => {
 
     const params = useParams().id;
     const [pageIndex, setPageIndex] = useState(0);
+    const [pageLink, setPageLink] = useState(params);
 
 
-    const currentPage = () => {
+    const currentPage = (pageLink: string) => {
 
-        switch (params) {
+        switch (pageLink) {
             case 'backend':
-                setPageIndex(0);
+                // setPageIndex(0);
                 return <Backend />
 
             case 'mobile':
-                setPageIndex(1);
+                // setPageIndex(1);
                 return <Mobile />
 
             default:
-                setPageIndex(2)
+                // setPageIndex(2)
                 return <Web />
         }
     }
@@ -45,7 +46,7 @@ const Projects = () => {
             </div>
 
             <div className="projects-body">
-                {currentPage()}
+                {/* {currentPage(pageLink)} */}
             </div>
         </div>
     )

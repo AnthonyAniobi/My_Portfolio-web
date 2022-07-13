@@ -2,11 +2,11 @@ import React from 'react';
 import './server.scss';
 import serverImage from '../../assets/images/server.png';
 
-const Server = () => {
+const Server = ({ children }: { children?: JSX.Element }) => {
     return (
         <div className='server'>
             <img src={serverImage} alt="server" />
-            <div></div>
+            <div>{children}</div>
         </div>
     )
 }
