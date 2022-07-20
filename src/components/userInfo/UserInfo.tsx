@@ -14,14 +14,13 @@ const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
                 </h4>
                 {icon}
             </div>
-
             <div className="userinfo-button-container">
+
                 <button className="userinfo-button-about">
                     About Me
                 </button>
                 <button className="userinfo-button-resume">Download CV</button>
             </div>
-
         </div>
     )
 }
