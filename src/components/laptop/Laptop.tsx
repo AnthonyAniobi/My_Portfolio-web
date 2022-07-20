@@ -2,7 +2,7 @@ import React from 'react';
 import './laptop.scss';
 import laptopImage from '../../assets/images/laptop.png';
 
-const Laptop = ({ children }: { children?: JSX.Element }) => {
+const Laptop = ({ children }: { children: JSX.Element }) => {
 
     return (
         <div className='laptop'>

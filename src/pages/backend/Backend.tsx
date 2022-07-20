@@ -1,7 +1,7 @@
 import React from 'react';
 import './backend.scss';
 import Server from '../../components/server/Server';
-import { UserInfo } from '../../components';
+import { Projects, UserInfo } from '../../components';
 import { SiPython } from 'react-icons/si';
 
 const Backend = () => {
@@ -13,7 +13,9 @@ const Backend = () => {
                 </svg>
             </div>
             <div className="backend-container">
-                <Server />
+                <Server >
+                    <Projects type="backend" />
+                </Server>
                 <div className="backend-content">
                     <UserInfo stack='Backend' icon={<SiPython />} />
                 </div>
