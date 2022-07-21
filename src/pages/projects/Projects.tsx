@@ -1,29 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.scss';
-// import { Backend, Web, Mobile } from '../index';
 import { FaReact } from 'react-icons/fa';
 import { SiFlutter, SiPython } from 'react-icons/si';
-import { ProjectCard } from '../../components';
-import { useNavigate } from 'react-router-dom';
+import Web from '../web/Web';
+import Mobile from '../mobile/Mobile';
+import Backend from '../backend/Backend';
 
 
 const Projects = () => {
-    const navigate = useNavigate();
+    const [pageIndex, setPageIndex] = useState(0);
 
-    const moveToPage = (link: string) => {
-        return navigate(link);
+    const currentPage = (index: number) => {
+        switch (index) {
+            case 1:
+                return <Mobile />
+            case 2:
+                return <Backend />
+            default:
+                return <Web />
+        }
     }
 
     return (
         <div className='projects'>
             <div className="projects-sidebar">
                 <div> </div>
-                <SiFlutter className='selected' />
-                <FaReact />
-                <SiPython />
+                <FaReact className={pageIndex === 0 ? 'selected' : ''} onClick={() => setPageIndex(0)} />
+                <SiFlutter className={pageIndex === 1 ? 'selected' : ''} onClick={() => setPageIndex(1)} />
+                <SiPython className={pageIndex === 2 ? 'selected' : ''} onClick={() => setPageIndex(2)} />
             </div>
             <div className='projects-content'>
-
+                {currentPage(pageIndex)}
             </div>
         </div>
     )
