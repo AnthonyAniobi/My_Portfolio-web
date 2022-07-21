@@ -1,7 +1,7 @@
 import React from 'react';
 import Android from '../../components/android/Android';
 import './mobile.scss';
-import { Projects, UserInfo } from '../../components';
+import { UserInfo } from '../../components';
 import { SiFlutter } from 'react-icons/si';
 
 const Mobile = () => {
@@ -9,7 +9,7 @@ const Mobile = () => {
         <div className='mobile'>
             <div className="mobile-container">
                 <Android >
-                    <Projects type="mobile" />
+                    <h1>projects</h1>
                 </Android>
                 <div className="mobile-content">
                     <UserInfo stack='Mobile' icon={<SiFlutter />} />

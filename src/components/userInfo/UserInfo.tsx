@@ -1,7 +1,15 @@
 import React from 'react';
 import './userinfo.scss';
+import { useNavigate } from 'react-router-dom';
 
 const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
+
+    const navigate = useNavigate();
+
+    const downloadFile = () => {
+        navigate("./pdf/")
+    }
+
     return (
         <div className='userinfo'>
             <h1 className='userinfo-title'>
@@ -16,7 +24,7 @@ const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
             </div>
             <div className="userinfo-button-container">
 
-                <button className="userinfo-button-about">
+                <button className="userinfo-button-about" onClick={() => { navigate('/about') }}>
                     About Me
                 </button>
                 <button className="userinfo-button-resume">Download CV</button>

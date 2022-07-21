@@ -1,7 +1,7 @@
 import React from 'react';
 import './web.scss';
 import Laptop from '../../components/laptop/Laptop';
-import { Projects, UserInfo } from '../../components';
+import { UserInfo } from '../../components';
 import { FaReact } from 'react-icons/fa';
 
 const Web = () => {
@@ -10,7 +10,8 @@ const Web = () => {
 
             <div className="web-container">
                 <Laptop>
-                    <Projects type="web" />
+
+                    <h1>projects</h1>
                 </Laptop>
                 <div className="web-content">
                     <UserInfo stack='Web' icon={<FaReact />} />

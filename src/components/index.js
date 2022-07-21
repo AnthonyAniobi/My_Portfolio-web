@@ -3,4 +3,3 @@ export { default as Android } from './android/Android';
 export { default as Server } from './server/Server';
 export { default as UserInfo } from './userInfo/UserInfo';
 export { default as ProjectCard } from './projectcard/ProjectCard';
-export { default as Projects } from './projects/Projects';
