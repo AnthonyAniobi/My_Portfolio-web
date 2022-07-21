@@ -7,6 +7,7 @@ const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
             <h1 className='userinfo-title'>
                 Anthony Aniobi
             </h1>
+            <button>howdy</button>
             <div className="userinfo-stack-container">
 
                 <h4 className='userinfo-subtitle'>
