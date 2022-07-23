@@ -6,9 +6,9 @@ const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
 
     const navigate = useNavigate();
 
-    const downloadFile = () => {
-        navigate("./pdf/")
-    }
+    // const downloadFile = () => {
+    //     navigate("./pdf/")
+    // }
 
     return (
         <div className='userinfo'>
