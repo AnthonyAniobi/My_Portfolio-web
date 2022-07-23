@@ -9,9 +9,7 @@ const Web = () => {
         <div className="web">
 
             <div className="web-container">
-                <Laptop>
-                    <ProjectsList type="web" />
-                </Laptop>
+                <Laptop />
                 <div className="web-content">
                     <UserInfo stack='Web' icon={<FaReact />} />
                 </div>

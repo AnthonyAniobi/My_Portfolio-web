@@ -1,20 +1,20 @@
 import React from 'react';
+import { projectData } from '../../models/data';
 import ProjectCard from '../projectcard/ProjectCard';
 import './projectsList.scss';
-
 
 
 const ProjectsList = ({ type }: { type: string }) => {
     return (
         <div className='projectsList'>
-            <h1>{type}</h1>
+            <div className="titleBar">
+                <h1>{type} Projects</h1>
+            </div>
             <p>something in the file that would be in a line something in the file that would be in a line</p>
             <div className="allProjects">
-                {/* <ProjectCard {...allProjects[0]} /> */}
-                {/* <ProjectCard {...allProjects[0]} /> */}
-                {/* {
-                    allProjects.map((_project) => (<ProjectCard {..._project} />))
-                } */}
+                {
+                    projectData.map((_project) => (<ProjectCard {..._project} />))
+                }
             </div>
         </div>
     )

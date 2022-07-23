@@ -1,12 +1,19 @@
 import React from 'react';
 import './android.scss';
 import androidImage from '../../assets/images/android.png';
+import { ProjectsList } from '..';
 
-const Android = ({ children }: { children: JSX.Element }) => {
+const Android = () => {
     return (
         <div className='android'>
             <img src={androidImage} alt="andorid" />
-            <div>{children}</div>
+            <div>
+                <div>
+                    <div className='content'>
+                        <ProjectsList type="Mobile" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

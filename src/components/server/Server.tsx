@@ -10,28 +10,9 @@ const Server = ({ children }: { children?: JSX.Element }) => {
             <img src={serverImage} alt="server" />
             <div>
                 <div>
-
-                    Backend Projects
-
-
-                    that would work and then
-
-                    <br />
-                    <br />
-                    <br />do something on my end
-                    <h1>some thing</h1>
-                    <br /><br />
-                    how dy
-                    <br />
-                    that would work and then
-
-                    <br />
-                    <br />
-                    <br />do something on my end
-                    <h1>some thing very good ill do every day</h1>
-                    <br /><br />
-                    how dy
-                    {/* <ProjectsList type="server" /> */}
+                    <div className='content'>
+                        <ProjectsList type="Backend" />
+                    </div>
                 </div>
             </div>
         </div>
