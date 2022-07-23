@@ -1,7 +1,7 @@
 import React from 'react';
 import './web.scss';
 import Laptop from '../../components/laptop/Laptop';
-import { ProjectsList, UserInfo } from '../../components';
+import { UserInfo } from '../../components';
 import { FaReact } from 'react-icons/fa';
 
 const Web = () => {

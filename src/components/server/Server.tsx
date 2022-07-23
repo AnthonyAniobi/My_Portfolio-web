@@ -1,10 +1,9 @@
 import React from 'react';
 import './server.scss';
 import serverImage from '../../assets/images/server.png';
-import { ProjectsList, ProjectCard } from '..';
-import { projectData } from '../../models/data';
+import { ProjectsList } from '..';
 
-const Server = ({ children }: { children?: JSX.Element }) => {
+const Server = () => {
     return (
         <div className='server'>
             <img src={serverImage} alt="server" />

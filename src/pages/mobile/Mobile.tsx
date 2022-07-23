@@ -1,7 +1,7 @@
 import React from 'react';
 import Android from '../../components/android/Android';
 import './mobile.scss';
-import { ProjectsList, UserInfo } from '../../components';
+import { UserInfo } from '../../components';
 import { SiFlutter } from 'react-icons/si';
 
 const Mobile = () => {
