@@ -3,5 +3,9 @@
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: red;
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+
+    .allProjects {}
 }

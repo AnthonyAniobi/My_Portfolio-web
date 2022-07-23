@@ -1,32 +1,25 @@
 .projectcard {
-    padding: 5px;
-    height: 100px;
-    width: 100px;
-    border-radius: 5px;
-    background-color: var(--whiteDark);
-    -webkit-box-shadow: var(--boxShadow);
-    box-shadow: var(--boxShadow);
-    overflow: hidden;
-    position: relative;
+    // padding: 5px;
+    // height: 100px;
+    // width: 100px;
+    // border-radius: 5px;
+    // background-color: var(--whiteDark);
+    // -webkit-box-shadow: var(--boxShadow);
+    // box-shadow: var(--boxShadow);
+    // overflow: hidden;
 
-    &:hover {
-        -webkit-box-shadow: var(--boxShadowBig);
-        box-shadow: var(--boxShadowBig);
-        background-color: var(--white);
-        cursor: pointer;
-    }
 
-    .cardTitle {
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-    }
+    // &:hover {
+    //     -webkit-box-shadow: var(--boxShadowBig);
+    //     box-shadow: var(--boxShadowBig);
+    //     background-color: var(--white);
+    //     cursor: pointer;
+    // }
 
-    img {
-        position: absolute;
-        top: 40px;
-        right: 10px;
-        opacity: 0.4;
-        height: 200px;
-    }
+    // .cardTitle {
+    //     font-family: 'Roboto', sans-serif;
+    //     font-size: 20px;
+    //     font-weight: bold;
+    //     color: black;
+    // }
 }
