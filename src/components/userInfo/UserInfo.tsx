@@ -1,6 +1,6 @@
 import React from 'react';
 import './userinfo.scss';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
 
@@ -27,7 +27,7 @@ const UserInfo = ({ stack, icon }: { stack: string, icon: any }) => {
                 <button className="userinfo-button-about" onClick={() => { navigate('/about') }}>
                     About Me
                 </button>
-                <button className="userinfo-button-resume">Download CV</button>
+                {/* <button className="userinfo-button-resume"><Link to='./pdf/flutter.pdf'> Download CV</Link></button> */}
             </div>
         </div>
     )
